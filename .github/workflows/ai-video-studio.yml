@@ -68,5 +68,5 @@ jobs:
           tagName: ${{ github.ref_name }}
           releaseName: "AI Video Studio ${{ github.ref_name }}"
           releaseDraft: true
-          includeUpdaterJson: true
+          includeUpdaterJson: false
           args: "--config src-tauri/tauri.release.conf.json ${{ matrix.args }}"
